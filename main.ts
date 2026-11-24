@@ -43,6 +43,19 @@ const candidates = [
     line: "It's not a memory leak. The server is retaining everything in case legal asks.",
     scores: [1, 1, 2, 2, 1],
   },
+  // Pass 2 challengers: none displaces the pass-1 winner.
+  {
+    line: "We didn't delete the table. We renamed it backup_final_v2 and pointed prod at the empty one.",
+    scores: [2, 2, 2, 1, 1],
+  },
+  {
+    line: "The load test passed. It just never simulated 40,000 users all pressing the button I hid.",
+    scores: [2, 1, 2, 2, 1],
+  },
+  {
+    line: "Works on my machine. I have since been informed that production is also my machine.",
+    scores: [2, 2, 2, 2, 0],
+  },
 ];
 
 function weighted(c) {
